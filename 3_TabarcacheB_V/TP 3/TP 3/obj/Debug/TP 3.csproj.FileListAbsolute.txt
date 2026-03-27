@@ -1,0 +1,5 @@
+c:\users\alumno.et37\documents\visual studio 2015\Projects\TP 3\TP 3\bin\Debug\TP 3.exe.config
+c:\users\alumno.et37\documents\visual studio 2015\Projects\TP 3\TP 3\bin\Debug\TP 3.exe
+c:\users\alumno.et37\documents\visual studio 2015\Projects\TP 3\TP 3\bin\Debug\TP 3.pdb
+c:\users\alumno.et37\documents\visual studio 2015\Projects\TP 3\TP 3\obj\Debug\TP 3.exe
+c:\users\alumno.et37\documents\visual studio 2015\Projects\TP 3\TP 3\obj\Debug\TP 3.pdb
