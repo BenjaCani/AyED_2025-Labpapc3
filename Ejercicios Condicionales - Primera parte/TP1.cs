@@ -4,17 +4,15 @@ public class HelloWorld
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine("Escribe tu Nombre : ");
-        string Nombre = Console.ReadLine();
         Console.WriteLine("Indique la velocidad de su vehiculo: ");
-        int edad = Convert.ToInt32(Console.ReadLine());
-        if (edad >= 18)
+        int velocidad = Convert.ToInt32(Console.ReadLine());
+        if (velocidad > 120)
         {
-            Console.WriteLine("Bienvenido al club " + Nombre + ".");
+            Console.WriteLine("Multa en camino, exceso de velocidad);
         }
         else
         {
-            Console.WriteLine("Lo siento, eres muy polluelo.");
+            Console.WriteLine("Conduccion segura");
         }
 
     }
