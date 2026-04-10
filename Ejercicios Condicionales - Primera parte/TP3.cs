@@ -4,21 +4,16 @@ public class HelloWorld
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine("¿ Que nota sacaste en el examen ? : ");
+        Console.WriteLine("Ingresa un numero: ");
         double nota = Convert.ToDouble(Console.ReadLine());
 
-        if (nota >= 7)
+        if (numero % 2 == 0)
         {
-            Console.WriteLine("Estas Promocionado!!");
-        }
-        else if (nota >= 4 && nota <= 6)
-        {
-            Console.WriteLine("A Finales");
+            Console.WriteLine("Si es par.");
         }
         else
         {
-            Console.WriteLine("A Recuperatorio");
-
+            Console.WriteLine("Es impar");
         }
     }
 }
