@@ -1,24 +1,33 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-public class HelloWorld
+namespace Condicionales___Segunda_Parte
 {
-    public static void Main(string[] args)
+    class Program
     {
-        Console.WriteLine("¿ Que nota sacaste en el examen ? : ");
-        double nota = Convert.ToDouble(Console.ReadLine());
+ 
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Indique su sueldo (solo numeros): ");
+            double sueldo = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Indique Años de Antiguedad (solo numeros): ");
+            double AñosAnt = Convert.ToDouble(Console.ReadLine());
 
-        if (nota >= 7)
-        {
-            Console.WriteLine("Estas Promocionado!!");
-        }
-        else if (nota >= 4 && nota <= 6)
-        {
-            Console.WriteLine("A Finales");
-        }
-        else
-        {
-            Console.WriteLine("A Recuperatorio");
-
+            if (AñosAnt > 10)
+            {
+                double Aumento20 = sueldo * 1.2;
+                double SueldoNuevo20 = sueldo + Aumento20;
+                Console.WriteLine("Aumento de sueldo 20%: " + SueldoNuevo20);
+            }
+            else
+            {
+                double Aumento5 = sueldo * 0.05;
+                double SueldoNuevo5 = sueldo + Aumento5;
+                Console.WriteLine("Aumento de sueldo 5%: " + SueldoNuevo5);
+            }
         }
     }
 }
