@@ -11,7 +11,7 @@ namespace Condicionales___Segunda_Parte
  
         static void Main(string[] args)
         {
-            Console.WriteLine("Indique si es F o M (Femenino o Masculino: ");
+            Console.WriteLine("Indique si es F o M (Femenino o Masculino): ");
             string genero = Console.ReadLine();
             Console.WriteLine("Indique su Edad: ");
             double edad = Convert.ToDouble(Console.ReadLine());
