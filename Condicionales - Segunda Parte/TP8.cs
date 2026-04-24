@@ -1,36 +1,38 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System;
 
-namespace Condicionales___Segunda_Parte
+class Program
 {
-    class Program
+    static void Main()
     {
- 
-        static void Main(string[] args)
+        int num1, num2, num3;
+
+        Console.Write("Ingrese el primer número: ");
+        num1 = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Ingrese el segundo número: ");
+        num2 = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Ingrese el tercer número: ");
+        num3 = Convert.ToInt32(Console.ReadLine());
+
+        if (num1 > num2)
         {
-            Console.WriteLine("Escribe un Numero: ");
-            double N1= Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Escribe otro Numero: ");
-            double N2 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Escribe otro Numero nuevamente: ");
-            double N3 = Convert.ToDouble(Console.ReadLine());
-            
-
-            if (N1 > N2 && N1 > N3)
+            if (num1 > num3)
             {
-                Console.WriteLine("El Numero " + N1 + " es mayor");
-            }
-            else if (N2 > N1 && N2 > N3)
-            {
-
-                Console.WriteLine("El Numero " + N2 + " es mayor");
+                Console.WriteLine("El mayor es: " + num1);
             }
             else
             {
-                Console.WriteLine("El Numero " + N3 + " es mayor" );
+                Console.WriteLine("El mayor es: " + num3);
+            }
+        }
+        else
+        {
+            if (num2 > num3)
+            {
+                Console.WriteLine("El mayor es: " + num2);
+            }
+            else
+            {
+                Console.WriteLine("El mayor es: " + num3);
             }
         }
     }
