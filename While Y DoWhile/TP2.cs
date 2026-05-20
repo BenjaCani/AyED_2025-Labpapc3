@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,25 +10,32 @@ namespace TP2
     {
         static void Main(string[] args)
         {
-            
-            Console.Write("Escribe la nota de tu examen: ");
-            int nota = int.Parse(Console.ReadLine());
+
+
+            int nota;
 
             do
             {
+                
                 Console.Write("Escribe la nota de tu examen: ");
                 nota = int.Parse(Console.ReadLine());
+                if (nota > 10)
+                    
+                {
+                    Console.WriteLine("Error ");
 
+                }
 
 
             } while (nota > 10);
             {
 
-                Console.Write("Error");
+                Console.Write("Tu nota es correcta:"+nota);
 
 
             }
-            Console.Write("Escribe la nota de tu examen: ");
+            
         }
     }
 }
+
