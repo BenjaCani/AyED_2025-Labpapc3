@@ -10,40 +10,29 @@ namespace TP3
     {
         static void Main(string[] args)
         {
-            int contador = 1;
-            int calculo1 = 0;
-            int promedio;
-            int nota1 = 0;
-            int nota2 = 0;
-            int nota3= 0;
-            int nota4= 0;
-            int nota5= 0;
+            int contador = 0;
+            double promedio;
+            int suma=0;
+            int nota;
             do
             {
-                
-                Console.Write("Ingresa las notas del alumnos: ");
-                nota1 = int.Parse(Console.ReadLine());
-                contador++;
-                Console.Write("Ingresa las notas del alumnos: ");
-                nota2 = int.Parse(Console.ReadLine());
-                contador++;
-                Console.Write("Ingresa las notas del alumnos: ");
-                nota3 = int.Parse(Console.ReadLine());
-                contador++; 
-                Console.Write("Ingresa las notas del alumnos: ");
-                nota4 = int.Parse(Console.ReadLine());
-                contador++;
-                Console.Write("Ingresa las notas del alumnos: ");
-                nota5 = int.Parse(Console.ReadLine());
-                contador++;
-                calculo1 =  nota1 + nota2 + nota3 + nota4 + nota5;
-                promedio = calculo1 / 5;
-                
-                
 
-            } while (contador <= 5);
+                Console.Write("Ingresa las notas del alumnos: ");
+                nota = int.Parse(Console.ReadLine());
+                contador++;
+                suma = suma + nota;
+
+                Console.WriteLine("Suma Total="+suma);
+                Console.WriteLine("Cantidad de Numeros ingresados:"+contador);
+                promedio = suma / contador;
+
+
+
+
+            } while (contador < 5);
             {
-                Console.Write("Promedio: "+promedio);
+                Console.WriteLine("--Calculo de Promedio = "+suma+" / "+contador+"--");
+                Console.Write("Promedio: " + promedio);
 
             }
 
