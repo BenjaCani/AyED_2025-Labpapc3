@@ -43,6 +43,10 @@ namespace ConsoleApplication1
                 }
             } while (NumeroFijo != NumeroUsuario && contador < 5);
             Console.WriteLine("--Final del Juego--");
+            if (contador == 5)
+            {
+                Console.WriteLine("Haz Perdido");
+            }
             Console.WriteLine("Numero a Adivinar era "+NumeroFijo);
             Console.WriteLine("Intentos "+contador);
             
