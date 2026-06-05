@@ -1,1 +1,35 @@
+using System;
 
+class Program
+{
+    static void Main()
+    {
+        double monto;
+        double total = 0;
+        double ventaMayor = 0;
+        int cantidadVentas = 0;
+        string respuesta;
+
+        do
+        {
+            Console.Write("Ingrese el monto de la venta: ");
+            monto = Convert.ToDouble(Console.ReadLine());
+
+            total = total + monto;
+            cantidadVentas++;
+
+            if (monto > ventaMayor)
+            {
+                ventaMayor = monto;
+            }
+
+            Console.Write("¿Desea ingresar otra venta? (Presiona S para seguir / Presiona N para finalizar): ");
+            respuesta = Console.ReadLine();
+
+        } while (respuesta != "N" && respuesta != "n");
+
+        Console.WriteLine("Total recaudado: $" + total);
+        Console.WriteLine("Cantidad de ventas: " + cantidadVentas);
+        Console.WriteLine("Venta más alta: $" + ventaMayor);
+    }
+}
