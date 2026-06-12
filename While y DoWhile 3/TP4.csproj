@@ -1,0 +1,52 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace TP4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int numero= 0;
+            int numeromenor = 0;
+            int contador = 0;
+
+            Console.WriteLine("Ingrese la lista de numeros positivos: ");
+            numeromenor = int.Parse(Console.ReadLine());
+            contador++;
+
+            do
+            {
+           
+                    Console.WriteLine("Ingrese la lista de numeros positivos: ");
+                    numero = int.Parse(Console.ReadLine());
+                    contador++;
+
+                    if (numero < 0)
+                    {
+                        Console.WriteLine("Numero menor: " + numeromenor);
+
+                    }
+                    else if (numeromenor > numero)
+                    {
+                        numeromenor = numero;
+
+
+                    }
+
+                      
+
+
+
+            } while (numero > 0);
+
+
+
+
+
+        }
+    }
+}
