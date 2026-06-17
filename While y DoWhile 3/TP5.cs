@@ -23,7 +23,7 @@ namespace ConsoleApplication1
                 apuesta = int.Parse(Console.ReadLine());
                 
 
-                if (apuesta < 0 || apuesta > CreditoActual)
+                if (apuesta == 0 || apuesta > CreditoActual)
                 {
                     Console.WriteLine("ERRROR");
 
